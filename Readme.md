@@ -29,13 +29,6 @@ If you're on OSX, Homebrew is the simplest way to install PostgreSQL
 
 Follow the instructions in the Build Notes to initialize and start the database.
 
-## Setup
-
-Once PostgreSQL is running, the following commands will create the database and build the schema:
-
-    $ bundle exec rake db:create --trace
-    $ bundle exec rake db:schema:load --trace
-
 ### Note on Patches/Pull Requests
 
  * Fork the project.
