@@ -19,6 +19,23 @@ This is the site to help promote the project, highlighting why, how and where to
 Source hosted at [GitHub](http://github.com/andrew/24pullrequests).
 Report Issues/Feature requests on [GitHub Issues](http://github.com/andrew/24pullrequests/issues).
 
+## Requirements
+
+24 Pull Requests uses PostgreSQL as a datastore. 
+
+If you're on OSX, Homebrew is the simplest way to install PostgreSQL
+
+    $ brew install postgresql
+
+Follow the instructions in the Build Notes to initialize and start the database.
+
+## Setup
+
+Once PostgreSQL is running, the following commands will create the database and build the schema:
+
+    $ bundle exec rake db:create --trace
+    $ bundle exec rake db:schema:load --trace
+
 ### Note on Patches/Pull Requests
 
  * Fork the project.
